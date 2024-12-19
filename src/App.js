@@ -9,7 +9,6 @@ import RegisterForm from "./components/RegisterForm";
 import ServicePage from "./pages/ServicePage";
 import AboutusPage from "./pages/AboutusPage";
 import LocationPage from "./pages/LocationPage";
-import 'leaflet/dist/leaflet.css';
 import CancellationPolicyPage from "./pages/CancellationPolicyPage";
 
 
