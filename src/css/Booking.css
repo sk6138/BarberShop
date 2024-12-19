@@ -1,0 +1,93 @@
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #f9f9f9, #e3e8ff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Booking Container */
+.booking-container {
+  
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.booking-container h2 {
+  font-size: 2rem;
+  color: #6c63ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Input Fields */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Confirm Button */
+.confirm-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background: #5547e0;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 480px) {
+  .booking-container {
+    padding: 20px;
+  }
+
+  .booking-container h2 {
+    font-size: 1.5rem;
+  }
+}

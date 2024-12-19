@@ -1,0 +1,113 @@
+/* Global Styling for Gen Z vibe */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #f9f9f9, #e3e8ff);
+  color: #333;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+/* Home Container */
+.home-container {
+    /* margin-top: 15%; */
+  text-align: center;
+  padding: 40px 20px;
+}
+nav{
+    width: 100%;
+    
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #6c63ff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Service List */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Service Card */
+.service-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h2 {
+  color: #6c63ff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Book Now Button */
+.book-btn {
+  margin-top: 15px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #5547e0;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+}

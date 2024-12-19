@@ -1,0 +1,52 @@
+/* Link Container */
+.link-container {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  
+  /* Animated Link */
+  .animated-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+  }
+  
+ 
+  
+  .animated-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Arrow Animation - Infinite */
+  .arrow {
+    display: inline-block;
+    margin-left: 10px;
+    animation: arrowMove 1.5s infinite ease-in-out;
+  }
+  
+  /* Keyframes for Arrow Movement */
+  @keyframes arrowMove {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Hover State for Link Color */
+  .animated-link:hover {
+    color: #242324df;
+  }
+  

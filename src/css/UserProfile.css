@@ -1,0 +1,106 @@
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #f9f9f9, #e3e8ff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Profile Container */
+.profile-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-container h2 {
+  font-size: 2rem;
+  color: #6c63ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile-container h3 {
+  font-size: 1.5rem;
+  color: #6c63ff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Booking History */
+.booking-history {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.booking-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-item:last-of-type {
+  border-bottom: none;
+}
+
+.booking-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Button Styling (Optional if you have buttons) */
+button {
+  width: 100%;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #5547e0;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 480px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .profile-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .booking-item p {
+    font-size: 0.9rem;
+  }
+}

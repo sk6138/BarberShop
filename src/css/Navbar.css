@@ -1,0 +1,126 @@
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute; /* Keeps the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Fully transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 10; /* Ensures navbar stays above other elements */
+    color: white; /* Text color */
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease; /* Smooth transition on scroll */
+  }
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(43, 42, 42);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.color{
+  color:#b7b4f5 ;
+}
+#color2{
+  color:#b7b4f5 ;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(43, 42, 42);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(28, 28, 28);
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  background-color: rgb(43, 42, 42);
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.nav-links-mobile li {
+  margin-bottom: 20px;
+}
+
+.nav-links-mobile .nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-links-mobile .nav-link:hover {
+  color: rgb(20, 19, 19);
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  .nav-links-mobile.active {
+    display: flex;
+  }
+}
